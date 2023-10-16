@@ -62,19 +62,19 @@ const UserDetails = ({backButton, userId}) => {
         <div className="App">
        <h2>Country Dropdown</h2>
       </div> 
-      <div style={{width: "40%"}}>
-      <div  className="card2">
+      <div style={{width: "100%"}}>
+      <div  className="card3">
 
-      <div><h3>Select Country:</h3></div>
-<select id="countries" style={{width: "40%"}} onChange={(e) => setSelectedCountry({ value: e.target.value })}>
+      <div style={{margin: "15px"}}><h3>Select Country:</h3></div>
+<select id="countries" style={{width: "40%",margin: "10px"}} onChange={(e) => setSelectedCountry({ value: e.target.value })}>
 {Countries.map((country) => (
             <option value={country} >
               {country}
             </option>
           ))}
 </select>
-      
-      <button className="btn styleTop" onClick={() => handlePauseStartClick("")}>
+
+      <button className="btn styleTop" style={{paddingLeft: "25px"}} onClick={() => handlePauseStartClick("")}>
         {Running ? "Pause" : "Start"}
       </button>
       <div><h3>Time:</h3>
@@ -82,7 +82,7 @@ const UserDetails = ({backButton, userId}) => {
     </div>
       </div>
       </header>
-      <div className="App"><h3>Profile Page</h3></div>
+      <div className="App"><h2>Profile Page</h2></div>
       {userarr.map((userarr) => (
     <div className="card2" >
         <div style={{width:"40%", margin:"20px"}}>Name: {userarr.name}</div>
