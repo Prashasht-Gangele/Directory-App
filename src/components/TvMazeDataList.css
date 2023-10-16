@@ -1,0 +1,163 @@
+body{
+	width: 100%;
+	display: flex;
+}
+
+.TvMazeDataList{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction: column;
+	width: 100%;
+}
+.postDataList{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+.card{
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+border-radius: 18px;
+background: rgb(63, 142, 221);
+box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.9);
+font-family: roboto;
+text-align:start;
+transition: 0.5 ease;
+cursor: pointer;
+margin: 30px;  
+}
+.card2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background: white;
+	box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.9);
+	font-family: roboto;
+	text-align:start;
+	transition: 0.5 ease;
+	cursor: pointer;
+	margin: 30px;  
+	}
+
+.picture{
+	grid-area: picture;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.text{
+	grid-area: text;
+	margin: 25px;
+}
+
+.text h2{
+	margin-top: 0px;
+	font-size: 28px;
+}
+
+.info{
+	grid-area: info;
+	display: grid;
+	grid-template-rows: 1fr;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background: #5f5d5d; 
+}
+
+.info .data{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff; 
+}
+
+.info .border{
+	border-left:1px solid #f40612;
+}
+
+.info .value{
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.card:hover{
+	transform: scale(1.01);
+	box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6); 
+}
+body {
+	margin: 0;
+	padding:0;
+  }
+  
+  .App {
+	text-align: center;
+	}
+  
+  .btn {
+	  border: 1px solid #f40612;
+	  background:  rgb(63, 142, 221);
+	  padding: 10px 20px;
+	  font-size: 20px;
+	  font-family: 'montserrat';
+	  cursor: pointer;
+	  margin: 10px;
+	  transition: 0.8s;
+	  position: relative;
+	  overflow: hidden;
+	}
+  
+  .styleTop,
+  .styleBottom{
+	color: black;
+  }
+  
+  .styleTop:hover
+  .styleBottom:hover{
+  color: #f40612;
+  }
+  
+  .btn::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #f40612;
+	z-index: -1;
+	transition: 0.8s;
+  }
+  
+  .styleTop::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+  }
+  
+  .styleBottom::before{
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+  }
+  
+  .styleTop::before
+  .styleBottom::before
+  {
+	height: 180%;
+  }
+  
+  
+  .styleTop:hover::before
+  .styleBottom:hover::before
+  {
+	height: 0%;
+  }
+  #root{
+	width: 100%;
+  }
+  
+  
